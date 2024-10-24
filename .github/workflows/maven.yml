@@ -31,7 +31,8 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Run Qodana Static Analysis
-      uses: JetBrains/qodana-action@v2.5
+      uses: JetBrains/qodana-action@vv2024.2.5
+
       with:
         project-dir: ./
         report-dir: ./qodana-reports
